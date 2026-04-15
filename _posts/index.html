@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Xianghao&#039;s Homepage</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Xianghao&#039;s Homepage"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Xianghao&#039;s Homepage"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta property="og:type" content="blog"><meta property="og:title" content="Xianghao&#039;s Homepage"><meta property="og:url" content="https://wxianghao.com/"><meta property="og:site_name" content="Xianghao&#039;s Homepage"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://wxianghao.com/img/og_image.png"><meta property="article:author" content="Xianghao Wang"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://wxianghao.com/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://wxianghao.com"},"headline":"Xianghao's Homepage","image":["https://wxianghao.com/img/og_image.png"],"author":{"@type":"Person","name":"Xianghao Wang"},"publisher":{"@type":"Organization","name":"Xianghao's Homepage","logo":{"@type":"ImageObject"}},"description":""}</script><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=G-BK9D5GHS4W" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-BK9D5GHS4W');</script><!--!--><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.1"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">Xianghao&#039;s Homepage</a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2026-04-11T09:02:58.000Z" title="2026/4/11 17:02:58">2026-04-11</time></span><span class="level-item">Updated&nbsp;<time dateTime="2026-04-15T04:41:26.450Z" title="2026/4/15 12:41:26">2026-04-15</time></span><span class="level-item">3 minutes read (About 471 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2026/04/11/fnc-notes/ch1/">FNC Notes | Chapter 1</a></p><div class="content"><h1 id="Floating-point-numbers"><a href="#Floating-point-numbers" class="headerlink" title="Floating-point numbers"></a>Floating-point numbers</h1><p><strong>Floating-point numbers</strong>: $\pm(1+f) \times 2^n$</p>
+<ul>
+<li>$1+f$ is the significand and $f \in [0, 1)$.</li>
+<li>$n$ is the exponent.</li>
+</ul>
+<p><strong>Significand format</strong>:<br>$$<br>\begin{aligned}<br>f&amp;&#x3D;\sum_{i&#x3D;1}^d b_i 2^{d-i}  \quad \text{where} \quad b_{i} \in {0,1} \\<br>&amp;&#x3D; 2^{-d} \sum_{i&#x3D;0}^{d-1} b_i 2^i<br>\end{aligned}<br>$$</p>
+<ul>
+<li>$d$ is the number of bits representing the significand, called binary precision.</li>
+<li>There are $2^d$ significands, which are evenly spaced by $2^{-d}$ from $0$ to $2^d-1$.<ul>
+<li>Example ($d&#x3D;2$): $1, 1+\frac{1}{4}, 1+\frac{2}{4}, 1+\frac{3}{4}$</li>
+</ul>
+</li>
+</ul>
+<p><strong>Machine precision</strong>: $\epsilon_{\text{mach}}&#x3D;2^{-d}$</p>
+<ul>
+<li>Machine precision inherently indicates the relative error of $\text{fl}(x)$ mapping a real number to the nearest floating-point number.<br>  $$<br>  \frac{|\text{fl}(x)-x|}{|x|} \le \frac{2^n\times 2^{-d-1}}{2^n} &#x3D; \frac{1}{2} \epsilon_{\text{mach}}<br>  $$<ul>
+<li>$|\text{fl}(x)-x| \le \frac{1}{2}\times 2^{-d}$</li>
+<li>$2^n \le x &lt; 2^{n+1}$</li>
+<li>Equivalent to $\text{fl(x)}&#x3D;x(1+\epsilon)$ for some $\epsilon \le \frac{1}{2}\epsilon_{\text{mach}}$</li>
+</ul>
+</li>
+</ul>
+<p><strong>Accuracy</strong></p>
+<ul>
+<li>Absolute accuracy: $|\widetilde{x}-x|$</li>
+<li>Relative accuracy: $\dfrac{|\widetilde{x}-x|}{|x|}$</li>
+<li>Accurate digits: $-\log_{10} \dfrac{|\widetilde{x}-x|}{|x|}$</li>
+</ul>
+<h1 id="Problems-and-conditioning"><a href="#Problems-and-conditioning" class="headerlink" title="Problems and conditioning"></a>Problems and conditioning</h1><p><strong>Subtractive cancellation (loss of significance)</strong>: Adding $-1.0012$ to $1.0000$, we get $-0.0012&#x3D;-1.2 \times 10^3$. The significant digits reduce from $5$ to $2$.</p>
+<p><strong>Condition number</strong> is the ratio of the output’s relative error to the input’s relative error.<br>$$<br>\kappa_f(x) &#x3D; \left|\dfrac{xf’(x)}{f(x)}\right|<br>$$</p>
+<ul>
+<li>For composite $h(x)&#x3D;f(g(x))$, the condition number is $\kappa_h(x)&#x3D;\kappa_f(g(x))\kappa_g(x)$</li>
+</ul>
+<p><strong>Error estimation</strong>: With a smalle $\epsilon$, the estimated relative error is<br>$$<br>\left|\dfrac{f(x+\epsilon x)-f(x)}{f(x)}\right| \approx \kappa_f(x)|\epsilon|<br>$$</p>
+<ul>
+<li>If $\kappa_f\approx 10^d$, then computing $f(x)$ loses up to $d$ digits.</li>
+</ul>
+<h1 id="Algorithms"><a href="#Algorithms" class="headerlink" title="Algorithms"></a>Algorithms</h1><p><strong>Horner’s algorithm（秦九韶算法）</strong> is an efficient polynomial evaluation.<br>$$<br>\begin{aligned}<br>p(x) &amp;&#x3D; c_1 + c_2x + \dots + c_nx^{n-1} \\<br>&amp;&#x3D; (((c_nx + c_{n-1})x + c_{n-2})x+\dots+c_2)x+c_1<br>\end{aligned}<br>$$</p>
+<ul>
+<li>Regular method takes $n-1$ additions and $\frac{n(n-1)}{2}$ or $2n-3$ (cached $x_i$) multiplications, while the Horner’s algorithm takes $n-1$ additions and $n-1$ multiplications.</li>
+</ul>
+<h1 id="Stability"><a href="#Stability" class="headerlink" title="Stability"></a>Stability</h1><p><strong>Backward error</strong>: $\widetilde{f}$ is an algorithm for $f$. The approximate result $\widetilde{y}&#x3D;\widetilde{f}(x)$. If there is a value $\widetilde{x}$ such that $f(\widetilde{x})&#x3D;\widetilde{y}$, then the relative backward error in $\widetilde{y}$ is $\left|\dfrac{\widetilde{x}-x}{x}\right|$ and the absolute backward error is $\left|\widetilde{x}\right|$</p>
+<p><img src="/images/fnc-notes/backward_error.png" alt="Backward error"></p>
+<ul>
+<li>It measures the change to the original input that reproduces the result that was found by the algorithm.</li>
+<li>Small backward error implies the algorithm is stable, but a stable algorithm may produce a large backward error.<ul>
+<li>Example $f(x)&#x3D;x+1$ with $x &lt; \frac{1}{2}\epsilon_{\text{mach}}$:  $\ \widetilde{f}(x&#x3D;\frac{1}{4}\epsilon_{\text{mach}})&#x3D;1&#x3D;f(\widetilde{x}&#x3D;0)$, the backward error is $100%$.</li>
+</ul>
+</li>
+</ul>
+</div></article></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/images/avatar.jpeg" alt="Xianghao Wang"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Xianghao Wang</p><p class="is-size-6 is-block">Performance Engineering</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Ithaca, NY</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Post</p><a href="/archives/"><p class="title">1</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories/"><p class="title">0</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags/"><p class="title">0</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/wxianghao" target="_blank" rel="me noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Github" href="https://github.com/wxianghao"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Linkedin" href="https://www.linkedin.com/in/xianghao-wang-6489a6208/"><i class="fab fa-linkedin"></i></a></div></div></div><!--!--><!--!--><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2026-04-11T09:02:58.000Z">2026-04-11</time></p><p class="title"><a href="/2026/04/11/fnc-notes/ch1/">FNC Notes | Chapter 1</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2026/04/"><span class="level-start"><span class="level-item">April 2026</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><!--!--></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/">Xianghao&#039;s Homepage</a><p class="is-size-7"><span>&copy; 2026 Xianghao Wang</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><p class="is-size-7">© 2026</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script data-pjax src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script data-pjax src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><script type="text/javascript" id="MathJax-script" async>MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      },
+      chtml: {
+        matchFontHeight: false
+      }
+    };</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script src="/js/pjax.js"></script><!--!--><!--!--><!--!--><script data-pjax src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script data-pjax src="/js/insight.js" defer></script><script data-pjax>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>
